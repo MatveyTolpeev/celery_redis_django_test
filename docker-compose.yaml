@@ -18,5 +18,5 @@ services:
     build:
       context: ./
     volumes:
-      - ./photos:/app/scr/photos
+      - ./photos:/app/src/photos
     command: ['celery', '--workdir=./src', '-A', 'app', 'worker']
